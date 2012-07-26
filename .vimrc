@@ -1,0 +1,10 @@
+set number
+set autoindent
+set smartindent
+set tabstop=4
+set shiftwidth=4
+set showmatch
+set incsearch
+set hls
+colorscheme murphy
+set clipboard=unnamed
