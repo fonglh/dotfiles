@@ -8,3 +8,4 @@ set incsearch
 set hls
 colorscheme murphy
 set clipboard=unnamed
+syntax on
