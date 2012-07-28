@@ -7,7 +7,7 @@ set showmatch
 set incsearch
 set hls
 set ignorecase
-set smartcase
+set smartcase	"case sensitive when search string is mixed case
 colorscheme murphy
 set clipboard=unnamed
 syntax on
