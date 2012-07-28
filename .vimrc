@@ -10,3 +10,4 @@ set ignorecase
 set smartcase
 colorscheme murphy
 set clipboard=unnamed
+syntax on
