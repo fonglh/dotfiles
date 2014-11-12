@@ -12,6 +12,7 @@ Plugin 'gmarik/Vundle.vim'
 
 Bundle 'slim-template/vim-slim.git'
 Plugin 'thoughtbot/vim-rspec'
+Plugin 'tpope/vim-rails'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -26,6 +27,7 @@ filetype plugin indent on    " required
 " :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
 "
 " see :h vundle for more details or wiki for FAQ
+"
 " Put your non-Plugin stuff after this line
 set number
 set autoindent
@@ -41,18 +43,25 @@ set smartcase	"case sensitive when search string is mixed case
 colorscheme molokai   "needs molakai.vim colorscheme file
 set clipboard=unnamed
 syntax on
+
 "obviously will only work if the font is on the system
 if has('gui_running')
   set guifont=Ubuntu\ Mono\ 12
 endif
+
 "color the area wider than 120 columns differently
 let &colorcolumn=join(range(121, 999), ",")
 highlight ColorColumn ctermbg=235 guibg=#2c2d27
+
 "Enable slim syntax highlighting
 autocmd BufNewFile,BufRead *.slim set filetype=slim
+
 " Rspec.vim mappings
 " <Leader> is \ by default
 map <Leader>t :call RunCurrentSpecFile()<CR>
 map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
+
+" Set %% to expand to active file's directory. Shortcut for %:h
+cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
