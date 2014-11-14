@@ -26,8 +26,12 @@ Edits the path variable and enables use of [liquidprompt](https://github.com/noj
 
 1. Create a symlink to the .zshrc file in the repo from the home directory.
 
+    `$ ln -s sysconfig/.zshrc ~/.zshrc`
+
 ## .my.cnf
 
 Modifies the MySQL client prompt to display more information.
 
 1. Create a symlink for the .my.cnf file in the repo from the home directory.
+
+    `$ ln -s sysconfig/.my.cnf ~/.my.cnf`
