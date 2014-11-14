@@ -13,6 +13,7 @@ Plugin 'gmarik/Vundle.vim'
 Bundle 'slim-template/vim-slim.git'
 Plugin 'thoughtbot/vim-rspec'
 Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-surround'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
