@@ -56,7 +56,7 @@ source $ZSH/oh-my-zsh.sh
 #
 # After running sudo chmod ugo-x /usr/libexec/path_helper do disable path_helper so the vim rspec plugin can work,
 # the following path has to be used so liquidprompt can work properly.
-export PATH=$PATH:/usr/sbin:/sbin
+export PATH=$PATH:/usr/sbin:/sbin:/usr/texbin
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
