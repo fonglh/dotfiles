@@ -22,6 +22,7 @@ filetype plugin indent on    " required
 " Enable matchit plugin, included with Vim but not enabled
 " See Practical Vim tip 54. Allows % jumps between keywords.
 runtime macros/matchit.vim
+MatchDebug
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
 "
