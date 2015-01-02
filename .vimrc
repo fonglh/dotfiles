@@ -14,6 +14,8 @@ Bundle 'slim-template/vim-slim.git'
 Plugin 'thoughtbot/vim-rspec'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-surround'
+Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+"Plugin 'bling/vim-airline'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -48,11 +50,12 @@ set ignorecase
 set smartcase	"case sensitive when search string is mixed case
 colorscheme molokai   "needs molakai.vim colorscheme file
 set clipboard=unnamed
+set laststatus=2
 syntax on
 
 "obviously will only work if the font is on the system
 if has('gui_running')
-  set guifont=Ubuntu\ Mono\ 12
+  set guifont=Ubuntu\ Mono\ derivative\ Powerline:h16
 endif
 
 "color the area wider than 120 columns differently
