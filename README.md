@@ -28,6 +28,14 @@ Edits the path variable and enables use of [liquidprompt](https://github.com/noj
 
     `$ ln -s sysconfig/.zshrc ~/.zshrc`
 
+## .tmux.conf
+
+Configuration file for tmux
+
+1. Create a symlink to the .tmux.conf file in the repo from the home directory.
+
+    `$ ln -s sysconfig/.tmux.conf ~/.tmux.conf`
+
 ## .my.cnf
 
 Modifies the MySQL client prompt to display more information.
