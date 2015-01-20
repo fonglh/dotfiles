@@ -36,6 +36,9 @@ Configuration file for tmux
 
     `$ ln -s sysconfig/.tmux.conf ~/.tmux.conf`
 
+The `tmux` folder contains custom tmux startup scripts for customizing the windows
+and panes for various development projects.
+
 ## .my.cnf
 
 Modifies the MySQL client prompt to display more information.
