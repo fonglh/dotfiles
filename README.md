@@ -39,6 +39,12 @@ Configuration file for tmux
 The `tmux` folder contains custom tmux startup scripts for customizing the windows
 and panes for various development projects.
 
+1. Start `tmux` with the custom file with the command:
+
+    `$ tmux -f cm.conf attach`
+
+  If `attach` is excluded, we'll have TWO tmux sessions instead of just one.
+
 ## .my.cnf
 
 Modifies the MySQL client prompt to display more information.
