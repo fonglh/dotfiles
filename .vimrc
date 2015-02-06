@@ -65,6 +65,7 @@ highlight ColorColumn ctermbg=235 guibg=#2c2d27
 "Enable slim syntax highlighting
 autocmd BufNewFile,BufRead *.slim set filetype=slim
 
+let g:rspec_command = "!bundle exec rspec {spec}"
 " Rspec.vim mappings
 " <Leader> is \ by default
 map <Leader>t :call RunCurrentSpecFile()<CR>
