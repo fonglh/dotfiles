@@ -78,3 +78,7 @@ cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
 " Map p3 to run Python3 on the current file
 nmap p3 :!python3 %<CR>
+
+" Map pdf to run make ws (to generate pdf files for computational thinking
+" workshop
+nmap pdf :!make ws<CR>
