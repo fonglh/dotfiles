@@ -16,7 +16,7 @@ Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-surround'
 Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Bundle 'christoomey/vim-tmux-navigator'
-Bundle 'altercation/vim-colors-solarized'
+Plugin 'chriskempson/base16-vim'
 "Plugin 'bling/vim-airline'
 
 " All of your Plugins must be added before the following line
@@ -51,7 +51,9 @@ set hls
 set ignorecase
 set smartcase	"case sensitive when search string is mixed case
 "colorscheme molokai   "needs molakai.vim colorscheme file
-colorscheme Tomorrow-Night   "needs Tomorrow-Night.vim colorscheme file
+"colorscheme Tomorrow-Night   "needs Tomorrow-Night.vim colorscheme file
+set background=dark
+colorscheme base16-default   "needs base16-vim plugin, colors from iterm2 theme, changes here are useless
 set clipboard=unnamed
 set laststatus=2
 syntax on
