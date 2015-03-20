@@ -49,7 +49,8 @@ set expandtab
 set hls
 set ignorecase
 set smartcase	"case sensitive when search string is mixed case
-colorscheme molokai   "needs molakai.vim colorscheme file
+"colorscheme molokai   "needs molakai.vim colorscheme file
+colorscheme Tomorrow-Night   "needs Tomorrow-Night.vim colorscheme file
 set clipboard=unnamed
 set laststatus=2
 syntax on
