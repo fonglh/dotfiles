@@ -16,6 +16,7 @@ Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-surround'
 Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Bundle 'christoomey/vim-tmux-navigator'
+Bundle 'altercation/vim-colors-solarized'
 "Plugin 'bling/vim-airline'
 
 " All of your Plugins must be added before the following line
