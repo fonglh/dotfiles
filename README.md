@@ -52,3 +52,10 @@ Modifies the MySQL client prompt to display more information.
 1. Create a symlink for the .my.cnf file in the repo from the home directory.
 
     `$ ln -s sysconfig/.my.cnf ~/.my.cnf`
+
+## Enabling Readline shortcuts on iTerm2
+
+To enable them, on the iTerm2 menu, go to `iTerm -> Preferences`. Go to the `Profiles` tab, and click on `Keys`.
+For the Left option key acts as: section, choose the `+Esc` radio button, and you’re all set.
+
+From (http://blog.pangyanhan.com/posts/2013-12-13-vim-install-solarized-on-mac-os-x.html)
