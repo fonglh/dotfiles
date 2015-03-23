@@ -84,6 +84,6 @@ cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 " Map p3 to run Python3 on the current file
 nmap p3 :w<CR>:!python3 %<CR>
 
-" Map pdf to run make (on default target)
+" Map pdf to save file then run make (on default target)
 " Conversion Course Makefiles will be setup so they are the default target
-nmap pdf :!make<CR>
+nmap pdf :w<CR>:!make<CR>
