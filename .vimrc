@@ -63,8 +63,8 @@ if has('gui_running')
   set guifont=Ubuntu\ Mono\ derivative\ Powerline:h16
 endif
 
-"color the area wider than 120 columns differently
-let &colorcolumn=join(range(121, 999), ",")
+"color the area wider than 100 columns differently
+let &colorcolumn=join(range(101, 999), ",")
 highlight ColorColumn ctermbg=235 guibg=#2c2d27
 
 "Enable slim syntax highlighting
