@@ -58,6 +58,9 @@ set clipboard=unnamed
 set laststatus=2
 syntax on
 
+" Use 4 spaces to indent python files
+autocmd Filetype python setlocal ts=4 sts=4 sw=4
+
 "obviously will only work if the font is on the system
 if has('gui_running')
   set guifont=Ubuntu\ Mono\ derivative\ Powerline:h16
