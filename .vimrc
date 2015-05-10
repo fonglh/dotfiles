@@ -17,6 +17,7 @@ Plugin 'tpope/vim-surround'
 Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Bundle 'christoomey/vim-tmux-navigator'
 Plugin 'chriskempson/base16-vim'
+Plugin 'scrooloose/nerdtree'
 "Plugin 'bling/vim-airline'
 
 " All of your Plugins must be added before the following line
@@ -90,3 +91,6 @@ nmap p3 :w<CR>:!python3 %<CR>
 " Map pdf to save file then run make (on default target)
 " Conversion Course Makefiles will be setup so they are the default target
 nmap pdf :w<CR>:!make<CR>
+
+" Mapping for NERDTreeToggle
+nmap <Leader>g :NERDTreeToggle<CR>
