@@ -62,6 +62,10 @@ syntax on
 " Use 4 spaces to indent python files
 autocmd Filetype python setlocal ts=4 sts=4 sw=4
 
+" Set <Leader>r (for run) to mean different things depending on filetype
+autocmd FileType python nmap <Leader>r :w<CR>:!python3 %<CR>
+autocmd FileType tex nmap <Leader>r :w<CR>:!make<CR>
+
 "obviously will only work if the font is on the system
 if has('gui_running')
   set guifont=Ubuntu\ Mono\ derivative\ Powerline:h16
@@ -84,13 +88,6 @@ map <Leader>a :call RunAllSpecs()<CR>
 
 " Set %% to expand to active file's directory. Shortcut for %:h
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
-
-" Map p3 to run Python3 on the current file
-nmap p3 :w<CR>:!python3 %<CR>
-
-" Map pdf to save file then run make (on default target)
-" Conversion Course Makefiles will be setup so they are the default target
-nmap pdf :w<CR>:!make<CR>
 
 " Mapping for NERDTreeToggle
 nmap <Leader>g :NERDTreeToggle<CR>
