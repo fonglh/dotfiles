@@ -65,6 +65,7 @@ autocmd Filetype python setlocal ts=4 sts=4 sw=4
 " Set <Leader>r (for run) to mean different things depending on filetype
 autocmd FileType python nmap <Leader>r :w<CR>:!python3 %<CR>
 autocmd FileType tex nmap <Leader>r :w<CR>:!make<CR>
+autocmd FileType ruby nmap <Leader>r :w<CR>:!ruby %<CR>
 
 "obviously will only work if the font is on the system
 if has('gui_running')
