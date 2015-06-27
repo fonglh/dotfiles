@@ -18,6 +18,7 @@ Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Bundle 'christoomey/vim-tmux-navigator'
 Plugin 'chriskempson/base16-vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'elixir-lang/vim-elixir'
 "Plugin 'bling/vim-airline'
 
 " All of your Plugins must be added before the following line
@@ -66,6 +67,7 @@ autocmd Filetype python setlocal ts=4 sts=4 sw=4
 autocmd FileType python nmap <Leader>r :w<CR>:!python3 %<CR>
 autocmd FileType tex nmap <Leader>r :w<CR>:!make<CR>
 autocmd FileType ruby nmap <Leader>r :w<CR>:!ruby %<CR>
+autocmd FileType elixir nmap <Leader>r :w<CR>:!iex %<CR>
 
 "obviously will only work if the font is on the system
 if has('gui_running')
