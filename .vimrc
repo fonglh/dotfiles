@@ -69,6 +69,10 @@ autocmd FileType tex nmap <Leader>r :w<CR>:!make<CR>
 autocmd FileType ruby nmap <Leader>r :w<CR>:!ruby %<CR>
 autocmd FileType elixir nmap <Leader>r :w<CR>:!iex %<CR>
 
+" Don't write backupfile when editing py files so
+" watchmedo doesn't run twice
+autocmd FileType python set nowritebackup
+
 "obviously will only work if the font is on the system
 if has('gui_running')
   set guifont=Ubuntu\ Mono\ derivative\ Powerline:h16
