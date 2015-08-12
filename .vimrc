@@ -73,6 +73,7 @@ autocmd FileType python nmap <Leader>r :w<CR>:!python3 %<CR>
 autocmd FileType tex nmap <Leader>r :w<CR>:!make<CR>
 autocmd FileType ruby nmap <Leader>r :w<CR>:!ruby %<CR>
 autocmd FileType elixir nmap <Leader>r :w<CR>:!iex %<CR>
+autocmd FileType markdown nmap <Leader>r :w<CR>:!pandoc % -f markdown -o %.html<CR>
 
 " Don't write backupfile when editing py files so
 " watchmedo doesn't run twice
