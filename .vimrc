@@ -63,6 +63,11 @@ syntax on
 " Use 4 spaces to indent python files
 autocmd Filetype python setlocal ts=4 sts=4 sw=4
 
+" Detect *.md as markdown instead of Modula-2
+" Set 4 spaces for indentation of markdown files
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+autocmd Filetype markdown setlocal ts=4 sts=4 sw=4
+
 " Set <Leader>r (for run) to mean different things depending on filetype
 autocmd FileType python nmap <Leader>r :w<CR>:!python3 %<CR>
 autocmd FileType tex nmap <Leader>r :w<CR>:!make<CR>
