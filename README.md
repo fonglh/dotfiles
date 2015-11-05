@@ -20,9 +20,16 @@ Detailed instructions and examples can be found at https://github.com/gmarik/Vun
 
 1. After that, open Vim and run `PluginInstall`
 
+## oh-my-zsh
+
+Install (oh-my-zsh)[https://github.com/robbyrussell/oh-my-zsh]
+as the `.zshrc` file assumes that's what we're using.
+
+1. `sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"`
+
 ## .zshrc
 
-Edits the path variable.
+Edits the path variable and enables the plugins.
 
 1. Create a symlink to the .zshrc file in the repo from the home directory.
 
