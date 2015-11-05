@@ -22,7 +22,7 @@ Detailed instructions and examples can be found at https://github.com/gmarik/Vun
 
 ## .zshrc
 
-Edits the path variable and enables use of [liquidprompt](https://github.com/nojhan/liquidprompt)
+Edits the path variable.
 
 1. Create a symlink to the .zshrc file in the repo from the home directory.
 

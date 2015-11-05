@@ -86,5 +86,3 @@ export LANG=en_US.UTF-8
 
 # alias for a recursive grep search that excludes the tmp,log,db directories in a rails app
 alias gror='grep -r --exclude-dir={tmp,log,db}'
-[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
-source ~/sysconfig/liquidprompt/liquidprompt
