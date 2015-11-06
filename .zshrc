@@ -95,6 +95,7 @@ alias gror='grep -r --exclude-dir={tmp,log,db}'
 DEFAULT_USER=fonglh
 alias rake='noglob rake'
 
+export PATH="$HOME/.rbenv/bin:$PATH:/usr/local/go/bin"
 export GOPATH=$HOME/gowork
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:/usr/local/go/bin

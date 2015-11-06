@@ -26,6 +26,7 @@ Plugin 'fatih/vim-go'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+
 " Enable matchit plugin, included with Vim but not enabled
 " See Practical Vim tip 54. Allows % jumps between keywords.
 runtime macros/matchit.vim
