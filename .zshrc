@@ -98,7 +98,6 @@ alias rake='noglob rake'
 export PATH="$HOME/.rbenv/bin:$PATH:/usr/local/go/bin"
 export GOPATH=$HOME/gowork
 export PATH=$PATH:$GOPATH/bin
-export PATH=$PATH:/usr/local/go/bin
 
 #docker aliases
 alias dps='docker ps'
