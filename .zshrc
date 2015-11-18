@@ -55,15 +55,6 @@ source $ZSH/oh-my-zsh.sh
 BASE16_SHELL=$HOME/.config/base16-shell/
 [ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
 
-#export PATH="/opt/boxen/rbenv/shims:/opt/boxen/rbenv/bin:/opt/boxen/rbenv/plugins/ruby-build/bin:/opt/boxen/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-# export MANPATH="/usr/local/man:$MANPATH"
-#
-# After running sudo chmod ugo-x /usr/libexec/path_helper do disable path_helper so the vim rspec plugin can work,
-# the following path has to be used so liquidprompt can work properly.
-export PATH=$PATH:/usr/sbin:/sbin:/usr/texbin
-export RBENV_ROOT=/usr/local/var/rbenv
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
 
