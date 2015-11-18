@@ -19,6 +19,7 @@ Bundle 'christoomey/vim-tmux-navigator'
 Plugin 'chriskempson/base16-vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'elixir-lang/vim-elixir'
+Plugin 'fatih/vim-go'
 "Plugin 'bling/vim-airline'
 
 " All of your Plugins must be added before the following line
@@ -104,3 +105,7 @@ cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
 " Mapping for NERDTreeToggle
 nmap <Leader>g :NERDTreeToggle<CR>
+
+" vim-go mappings
+au FileType go nmap <leader>b <Plug>(go-build)
+au FileType go nmap <leader>r <Plug>(go-run)

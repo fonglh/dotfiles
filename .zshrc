@@ -88,3 +88,6 @@ export LANG=en_US.UTF-8
 
 # alias for a recursive grep search that excludes the tmp,log,db directories in a rails app
 alias gror='grep -r --exclude-dir={tmp,log,db}'
+
+export GOPATH=$HOME/gowork
+export PATH=$PATH:$GOPATH/bin
