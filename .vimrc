@@ -103,6 +103,9 @@ map <Leader>a :call RunAllSpecs()<CR>
 " Set %% to expand to active file's directory. Shortcut for %:h
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
+" Allow saving of files as sudo when I forgot to start vim using sudo
+cmap w!! w !sudo tee > /dev/null %
+
 " Mapping for NERDTreeToggle
 nmap <Leader>g :NERDTreeToggle<CR>
 
