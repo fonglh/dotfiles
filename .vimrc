@@ -76,6 +76,10 @@ autocmd FileType ruby nmap <Leader>r :w<CR>:!ruby %<CR>
 autocmd FileType elixir nmap <Leader>r :w<CR>:!iex %<CR>
 autocmd FileType markdown nmap <Leader>r :w<CR>:!pandoc % -f markdown -o %.html<CR>
 
+" Set <Leader>i (for idle) to run with idle
+" Useful for running curve and runes missions
+map <Leader>i :w<CR>:!idle3 -r %<CR>
+
 " Don't write backupfile when editing py files so
 " watchmedo doesn't run twice
 autocmd FileType python set nowritebackup
