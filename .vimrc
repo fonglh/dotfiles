@@ -55,6 +55,7 @@ set ignorecase
 set smartcase	"case sensitive when search string is mixed case
 "colorscheme molokai   "needs molakai.vim colorscheme file
 "colorscheme Tomorrow-Night   "needs Tomorrow-Night.vim colorscheme file
+let base16colorspace=256  " Access colors present in 256 colorspace
 set background=dark
 colorscheme base16-default   "needs base16-vim plugin, colors from iterm2 theme, changes here are useless
 set clipboard=unnamed
