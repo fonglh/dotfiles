@@ -53,6 +53,7 @@ set expandtab
 set hls
 set ignorecase
 set smartcase	"case sensitive when search string is mixed case
+set backspace=2  "fix backspace in vim 7.4 http://vim.wikia.com/wiki/Backspace_and_delete_problems
 "colorscheme molokai   "needs molakai.vim colorscheme file
 "colorscheme Tomorrow-Night   "needs Tomorrow-Night.vim colorscheme file
 let base16colorspace=256  " Access colors present in 256 colorspace
