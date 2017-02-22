@@ -59,7 +59,6 @@ set backspace=2  "fix backspace in vim 7.4 http://vim.wikia.com/wiki/Backspace_a
 let base16colorspace=256  " Access colors present in 256 colorspace
 set background=dark
 colorscheme base16-default   "needs base16-vim plugin, colors from iterm2 theme, changes here are useless
-set clipboard=unnamed
 set laststatus=2
 syntax on
 

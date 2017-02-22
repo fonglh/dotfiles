@@ -45,7 +45,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git rails bundler)
+plugins=(git rails bundler docker)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -92,6 +92,15 @@ export LANG=en_US.UTF-8
 
 # alias for a recursive grep search that excludes the tmp,log,db directories in a rails app
 alias gror='grep -r --exclude-dir={tmp,log,db}'
+DEFAULT_USER=fonglh
+alias rake='noglob rake'
 
 export GOPATH=$HOME/gowork
 export PATH=$PATH:$GOPATH/bin
+
+#docker aliases
+alias dps='docker ps'
+alias dpsa='docker ps --all'
+alias drm='docker rm'
+alias drmi='docker rmi'
+alias dim='docker images'
