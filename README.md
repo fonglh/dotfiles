@@ -35,6 +35,14 @@ Edits the path variable and enables the plugins.
 
     `$ ln -s sysconfig/.zshrc ~/.zshrc`
 
+## i3
+
+Configuration file for the i3 window manager.
+
+1. The i3 configuration file is at `~/.config/i3/config`.
+
+    `ln -s ~/sysconfig/i3/ .config/i3`
+
 ## .tmux.conf
 
 Configuration file for tmux
