@@ -43,6 +43,12 @@ Configuration file for the i3 window manager.
 
     `ln -s ~/sysconfig/i3/ .config/i3`
 
+## Redshift
+
+Configuration file for Redshift, an open source version of flux.
+
+1. `ln -s ~/sysconfig/redshift.conf .config/redshift.conf`
+
 ## .tmux.conf
 
 Configuration file for tmux
