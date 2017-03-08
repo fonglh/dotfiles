@@ -165,3 +165,6 @@ bar {
 
 # Switch off laptop screen on startup
 exec --no-startup-id xrandr --output LVDS-1 --off
+
+# Start redshift in auto mode, place config file at ~/.config/redshift.conf
+exec --no-startup-id redshift
