@@ -97,6 +97,7 @@ alias rake='noglob rake'
 
 export GOPATH=$HOME/gowork
 export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:/usr/local/go/bin
 
 #docker aliases
 alias dps='docker ps'
