@@ -105,5 +105,7 @@ alias dpsa='docker ps --all'
 alias drm='docker rm'
 alias drmi='docker rmi'
 alias dim='docker images'
+alias dcp='docker container prune'
+alias dip='docker image prune'
 
 export PATH="$HOME/.yarn/bin:$PATH"
