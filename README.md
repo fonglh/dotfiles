@@ -1,4 +1,4 @@
-sysconfig
+Dotfiles
 =========
 
 .vimrc file and Ubuntu colour scheme for OS X terminal
@@ -12,7 +12,7 @@ Detailed instructions and examples can be found at https://github.com/gmarik/Vun
 
 1. Create a symlink to the .vimrc file in the repo from the home directory.
 
-    `$ ln -s sysconfig/.vimrc ~/.vimrc`
+    `$ ln -s dotfiles/.vimrc ~/.vimrc`
 
 1. The most important thing is to install Vundle.
 
@@ -33,7 +33,7 @@ Edits the path variable and enables the plugins.
 
 1. Create a symlink to the .zshrc file in the repo from the home directory.
 
-    `$ ln -s sysconfig/.zshrc ~/.zshrc`
+    `$ ln -s dotfiles/.zshrc ~/.zshrc`
 
 ## i3
 
@@ -41,13 +41,13 @@ Configuration file for the i3 window manager.
 
 1. The i3 configuration file is at `~/.config/i3/config`.
 
-    `ln -s ~/sysconfig/i3/ .config/i3`
+    `ln -s ~/dotfiles/i3/ .config/i3`
 
 ## Redshift
 
 Configuration file for Redshift, an open source version of flux.
 
-1. `ln -s ~/sysconfig/redshift.conf .config/redshift.conf`
+1. `ln -s ~/dotfiles/redshift.conf .config/redshift.conf`
 
 ## .tmux.conf
 
@@ -55,7 +55,7 @@ Configuration file for tmux
 
 1. Create a symlink to the .tmux.conf file in the repo from the home directory.
 
-    `$ ln -s sysconfig/.tmux.conf ~/.tmux.conf`
+    `$ ln -s dotfiles/.tmux.conf ~/.tmux.conf`
 
 The `tmux` folder contains custom tmux startup scripts for customizing the windows
 and panes for various development projects.
@@ -72,7 +72,7 @@ Modifies the MySQL client prompt to display more information.
 
 1. Create a symlink for the .my.cnf file in the repo from the home directory.
 
-    `$ ln -s sysconfig/.my.cnf ~/.my.cnf`
+    `$ ln -s dotfiles/.my.cnf ~/.my.cnf`
 
 ## Enabling Readline shortcuts on iTerm2
 
