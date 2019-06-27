@@ -53,6 +53,16 @@ fi
 
 echo -e "--------------------------------------------------------------------------------\n"
 
+# Install fuzzy finder for shell
+if [ ! -d ~/.fzf ]; then
+  git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+  ~/.fzf/install
+else
+  echo "fzf already installed"
+fi
+
+echo -e "--------------------------------------------------------------------------------\n"
+
 # Setup .vimrc
 if [ ! -f ~/.vimrc ]; then
   echo "Symlinking .vimrc"
