@@ -132,3 +132,5 @@ export PATH="$HOME/.yarn/bin:$PATH"
 if [ $commands[kubectl] ]; then
   source <(kubectl completion zsh)
 fi
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
