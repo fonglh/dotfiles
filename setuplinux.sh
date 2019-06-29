@@ -14,7 +14,7 @@ echo -e "-----------------------------------------------------------------------
 # Link .zshrc
 if [ ! -f ~/.zshrc ]; then
   echo "Symlinking .zshrc"
-  ln -s ./.zshrc ~/.zshrc
+  ln -s ~/dotfiles/.zshrc ~/.zshrc
 else
   echo ".zshrc already exists"
 fi
@@ -66,7 +66,7 @@ echo -e "-----------------------------------------------------------------------
 # Setup .vimrc
 if [ ! -f ~/.vimrc ]; then
   echo "Symlinking .vimrc"
-  ln -s ./.vimrc ~/.vimrc
+  ln -s ~/dotfiles/.vimrc ~/.vimrc
 else
   echo ".vimrc already exists"
 fi
