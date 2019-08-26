@@ -20,6 +20,7 @@ Plugin 'chriskempson/base16-vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'fatih/vim-go'
+Plugin 'JuliaEditorSupport/julia-vim'
 "Plugin 'bling/vim-airline'
 
 " All of your Plugins must be added before the following line
@@ -62,8 +63,9 @@ colorscheme base16-default-dark   "needs base16-vim plugin, colors from iterm2 t
 set laststatus=2
 syntax on
 
-" Use 4 spaces to indent python files
+" Use 4 spaces to indent python and julia files
 autocmd Filetype python setlocal ts=4 sts=4 sw=4
+autocmd Filetype julia setlocal ts=4 sts=4 sw=4
 
 " Detect *.md as markdown instead of Modula-2
 " Set 4 spaces for indentation of markdown files
