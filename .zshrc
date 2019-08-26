@@ -132,6 +132,9 @@ if [ $commands[kubectl] ]; then
   source <(kubectl completion zsh)
 fi
 
+# For tmuxinator
+export EDITOR=vim
+
 alias psql="docker run --rm -it postgres:9.6-alpine psql -h172.17.0.1 -Upostgres"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
