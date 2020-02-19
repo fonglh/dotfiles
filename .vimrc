@@ -3,6 +3,8 @@ filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
+" If fzf was installed using Homebrew
+set rtp+=/usr/local/opt/fzf
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
@@ -14,14 +16,14 @@ Bundle 'slim-template/vim-slim.git'
 Plugin 'thoughtbot/vim-rspec'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-surround'
-Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+Bundle 'vim-airline/vim-airline'
 Bundle 'christoomey/vim-tmux-navigator'
-Plugin 'chriskempson/base16-vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'fatih/vim-go'
-Plugin 'JuliaEditorSupport/julia-vim'
+"Plugin 'JuliaEditorSupport/julia-vim'
 "Plugin 'bling/vim-airline'
+Plugin 'junegunn/fzf.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -59,13 +61,14 @@ set backspace=2  "fix backspace in vim 7.4 http://vim.wikia.com/wiki/Backspace_a
 "colorscheme Tomorrow-Night   "needs Tomorrow-Night.vim colorscheme file
 let base16colorspace=256  " Access colors present in 256 colorspace
 set background=dark
-colorscheme base16-default-dark   "needs base16-vim plugin, colors from iterm2 theme, changes here are useless
 set laststatus=2
 syntax on
 
-" Use 4 spaces to indent python and julia files
+let g:airline_powerline_fonts = 1
+
+" Use 4 spaces to indent python files
 autocmd Filetype python setlocal ts=4 sts=4 sw=4
-autocmd Filetype julia setlocal ts=4 sts=4 sw=4
+" autocmd Filetype julia setlocal ts=4 sts=4 sw=4
 
 " Detect *.md as markdown instead of Modula-2
 " Set 4 spaces for indentation of markdown files

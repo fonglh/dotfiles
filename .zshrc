@@ -22,7 +22,7 @@ BULLETTRAIN_PROMPT_ORDER=(
 )
 
 BULLETTRAIN_CONTEXT_DEFAULT_USER=fonglh
-BULLETTRAIN_PROMPT_CHAR="\$ "
+BULLETTRAIN_PROMPT_CHAR="\$"
 #BULLETTRAIN_PROMPT_SEPARATE_LINE=false
 BULLETTRAIN_PROMPT_ADD_NEWLINE=false
 
@@ -132,9 +132,30 @@ if [ $commands[kubectl] ]; then
   source <(kubectl completion zsh)
 fi
 
+################## Linux configuration for tmuxinator, psql on Docker and fzf
 # For tmuxinator
-export EDITOR=vim
+#export EDITOR=vim
+#
+#alias psql="docker run --rm -it postgres:9.6-alpine psql -h172.17.0.1 -Upostgres"
+#
+#[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+################################################################################
 
-alias psql="docker run --rm -it postgres:9.6-alpine psql -h172.17.0.1 -Upostgres"
+# fzf via Homebrew
+if [ -e /usr/local/opt/fzf/shell/completion.zsh ]; then
+  source /usr/local/opt/fzf/shell/key-bindings.zsh
+  source /usr/local/opt/fzf/shell/completion.zsh
+fi
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# Start a Docker container to run psql and connect to a running PostgreSQL container.
+alias psql="docker run --rm -it postgres:9.6-alpine psql -h docker.for.mac.localhost -Upostgres"
+alias pg_restore="docker run --rm -it postgres:9.6-alpine pg_restore -h docker.for.mac.localhost -Upostgres"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/fonglh/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/fonglh/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/fonglh/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/fonglh/google-cloud-sdk/completion.zsh.inc'; fi
+
+# added by travis gem
+[ -f /Users/fonglh/.travis/travis.sh ] && source /Users/fonglh/.travis/travis.sh
