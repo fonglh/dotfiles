@@ -5,7 +5,26 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
+ZSH_THEME="bullet-train"
+
+BULLETTRAIN_PROMPT_ORDER=(
+  status
+  time
+  custom
+  context
+  dir
+  perl
+  ruby
+  virtualenv
+  go
+  git
+  cmd_exec_time
+)
+
+BULLETTRAIN_CONTEXT_DEFAULT_USER=fonglh
+BULLETTRAIN_PROMPT_CHAR="\$"
+#BULLETTRAIN_PROMPT_SEPARATE_LINE=false
+BULLETTRAIN_PROMPT_ADD_NEWLINE=false
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -60,8 +79,7 @@ BASE16_SHELL=$HOME/.config/base16-shell/
 #
 # After running sudo chmod ugo-x /usr/libexec/path_helper do disable path_helper so the vim rspec plugin can work,
 # the following path has to be used so liquidprompt can work properly.
-export PATH=$PATH:/usr/sbin:/sbin:/usr/texbin
-export RBENV_ROOT=/usr/local/var/rbenv
+export PATH=$PATH:/usr/sbin:/sbin:/usr/texbin:$HOME/.rbenv/bin
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # You may need to manually set your language environment
@@ -113,3 +131,10 @@ export PATH="$HOME/.yarn/bin:$PATH"
 if [ $commands[kubectl] ]; then
   source <(kubectl completion zsh)
 fi
+
+# For tmuxinator
+export EDITOR=vim
+
+alias psql="docker run --rm -it postgres:9.6-alpine psql -h172.17.0.1 -Upostgres"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
