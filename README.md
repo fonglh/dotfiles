@@ -22,7 +22,7 @@ Detailed instructions and examples can be found at https://github.com/gmarik/Vun
 
 ## oh-my-zsh
 
-Install (oh-my-zsh)[https://github.com/robbyrussell/oh-my-zsh]
+Install [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 as the `.zshrc` file assumes that's what we're using.
 
 1. `sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"`
