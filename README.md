@@ -35,6 +35,11 @@ Edits the path variable and enables the plugins.
 
     `$ ln -s dotfiles/.zshrc ~/.zshrc`
 
+2. If using the [powerlevel10k](https://github.com/romkatv/powerlevel10k) Zsh theme, symlink
+the configuration file.
+
+    `$ ln -s dotfiles/.p10k.zsh ~/.p10k.zsh`
+
 ## i3
 
 Configuration file for the i3 window manager.
