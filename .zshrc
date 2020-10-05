@@ -120,12 +120,26 @@ if [ $commands[kubectl] ]; then
   source <(kubectl completion zsh)
 fi
 
+################## Linux configuration for tmuxinator, psql on Docker and fzf
 # For tmuxinator
-export EDITOR=vim
+#export EDITOR=vim
+#
+#alias psql="docker run --rm -it postgres:9.6-alpine psql -h172.17.0.1 -Upostgres"
+#
+#[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+#################################################################################
 
-alias psql="docker run --rm -it postgres:9.6-alpine psql -h172.17.0.1 -Upostgres"
+# fzf via Homebrew
+if [ -e /usr/local/opt/fzf/shell/completion.zsh ]; then
+  source /usr/local/opt/fzf/shell/key-bindings.zsh
+  source /usr/local/opt/fzf/shell/completion.zsh
+fi
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# Start a Docker container to run psql and connect to a running PostgreSQL container.
+alias psql="docker run --rm -it postgres:9.6-alpine psql -h docker.for.mac.localhost -Upostgres"
+alias pg_restore="docker run --rm -it postgres:9.6-alpine pg_restore -h docker.for.mac.localhost -Upostgres"
+
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
