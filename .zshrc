@@ -125,6 +125,12 @@ export EDITOR=vim
 
 alias psql="docker run --rm -it postgres:9.6-alpine psql -h172.17.0.1 -Upostgres"
 
+# git diff with fzf to allow viewing by file
+fd() {
+  preview="git diff $@ --color=always -- {-1}"
+  git diff $@ --name-only | fzf --bind space:preview-page-down,b:preview-page-up --ansi --preview $preview
+}
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
