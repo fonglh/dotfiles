@@ -81,6 +81,7 @@ autocmd FileType tex nmap <Leader>r :w<CR>:!make<CR>
 autocmd FileType ruby nmap <Leader>r :w<CR>:!ruby %<CR>
 autocmd FileType elixir nmap <Leader>r :w<CR>:!iex %<CR>
 autocmd FileType markdown nmap <Leader>r :w<CR>:!pandoc % -f markdown -o %.html<CR>
+autocmd FileType go nmap <Leader>r :w<CR>:!go run %<CR>
 
 " Set <Leader>i (for idle) to run with idle
 " Useful for running curve and runes missions
